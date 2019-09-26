@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <link rel="stylesheet" href="./css/style.css">
+
+   <link href="https://fonts.googleapis.com/css?family=Gayathri:100,400,700&display=swap&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap&subset=korean&display=swap"
+      rel="stylesheet">
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+   <title>Asian Culture Society</title>
+</head>
+<body>
+
+   <div class="navigation">
+      <input class="nav-checkbox" type="checkbox" id="navi-toggle">
+      <label class="nav-button" for="navi-toggle">
+         <span class="nav-icon">&nbsp;</span>
+      </label>
+      <div class="nav-background">&nbsp;</div>
+      <nav class="nav-nav">
+         <ul class="nav-list">
+            <li class="nav-item"><a href="#header" class="nav-link" onclick="closeNav()">Home</a></li>
+            <li class="nav-item"><a href="#section-event" class="nav-link" onclick="closeNav()">Join / Events</a></li>
+            <li class="nav-item"><a href="#section-about" class="nav-link" onclick="closeNav()">About Us</a></li>
+            <li class="nav-item"><a href="#section-people" class="nav-link" onclick="closeNav()">Our Team</a></li>
+            <li class="nav-item"><a href="#section-contact" class="nav-link" onclick="closeNav()">Contact Us</a></li>
+         </ul>
+      </nav>
+   </div>
+   <!-- <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+            <ul class="navigation__list">
+               <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natous</a></li>
+               <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benfits</a></li>
+               <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+               <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+               <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+               </ul>
+      </nav>
+   </div> -->
+
+   <header id="header">
+      <div class="background">
+         <img class="background__img" src="./img/background.png" alt="Header Image">
+      </div>
+      <div class="logo">
+         <div class="logo__circle"></div>
+         <img class="logo__water" src="./img/logo-water.png" alt="Logo Water">
+         <img class="logo__fish" src="./img/logo-fish.png" alt="Logo Fish">
+      </div>
+   </header>
+
+   <section id="section-event">
+      <ul class="hello">
+         <li class="hello__language hello__english">Hello</li>
+         <li class="hello__language hello__korean">안녕하세요</li>
+         <li class="hello__language hello__japanese">こんにちは</li>
+         <li class="hello__language hello__chinese">你好</li>
+         <li class="hello__language hello__hindi">नमस्ते</li>
+         <li class="hello__language hello__vietnamese">Xin chao</li>
+      </ul>
+      <h1 class="acs-name">Asian Culture Society</h1>
+      <div class="event">
+         <ion-icon class="event__icon" name="calendar"></ion-icon>
+         <div class="event__text">This event is happening, so look out for it!</div>
+         <div class="event__date"> 2:00 PM, August 33rd</div>
+      </div>
+      <div class="btn-join">
+         <button class="btn-join__text">JOIN</button>
+      </div>
+   </section>
+
+   <section id="section-about">
+      <div class="about-title">
+         <div class="about-title__line"></div>
+         <h1 class="about-title__title">About Us</h1>
+         <div class="about-title__line"></div>
+      </div>
+      <ul>
+         <li class="about-text about-text-1">
+            <img class="about-text__icon about-text__icon-1" src="./img/icon-flag.png" alt="Icon Flag">
+            <span class="about-text__span about-text__span-1">
+               Promote awareness and provide an understanding of the Asian culture and heritage to the students of RIT and
+               the greater Rochester community.
+            </span>
+         </li>
+         <li class="about-text  about-text-2">
+            <img class="about-text__icon about-text__icon-2" src="./img/icon-env.png" alt="Icon Enviroment">
+            <span class="about-text__span about-text__span-2">
+               Provide a conducive environment for encouraging Asian students to
+               utilize their history, culture, and art to foster self-esteem and respect for their heritage.
+            </span>
+         </li>
+         <li class="about-text  about-text-3">
+            <img class="about-text__icon about-text__icon-3" src="./img/icon-social.png" alt="Icon Social">
+            <span class="about-text__span about-text__span-3">
+               Socializing: meeting new and interesting people and simply, having some fun!
+            </span>
+         </li>
+      </ul>
+      <img class="img-branch" src="./img/branch.png" alt="Branch Image">
+      <svg class="svg-building" viewBox="0 0 1919.7238 308.4773">
+         <path fill="#fff"
+            d="M959.7217 223.9861q-.7545 0-1.4923.024c-21.054.6819-37.5736 18.38-37.5736 39.4452v45.022h-65.4121v-46.5859a30.8219 30.8219 0 0 0-17.7486-28.1661c-10.0069-4.5486-19.289-2.1782-26.5861 1.9562a31.0541 31.0541 0 0 0-15.6269 27.0554v45.74H0v-12.7183l480.0021-34.6631 30.0082-57.0969h42.7l7.2681-6.36h55.419l7.268-4.5425h49.5137v-5.9053l6.8138-6.8138h59.053v-6.36l7.2681-2.7255h10.9021V155.848c-30.0686-12.42-46.0279-26.72-52.6155-33.7663a40.26 40.26 0 0 0-10.3284-7.9537l-5.1942-2.7969V105.88l12.7191-4.5425V94.978c48.1509 11.8106 82.6742 4.5425 82.6742 4.5425V82.2586h-30.8894C739.8628 70.448 706.248 28.6567 706.248 28.6567v-4.5426h8.1765l2.7256-9.085C786.1967 31.3822 826.171 11.395 826.171 11.395V6.8525h9.0851v-6.36h4.5425v11.8106c49.06 4.5426 119.9231 4.5426 119.9231 4.5426l.28-.4931s70.8636 0 119.923-4.5426V0h4.5426v6.36h9.085v4.5425s39.9744 19.9872 109.021 3.6341l2.7255 9.085h8.1766v4.5426s-33.6148 41.7913-46.3339 53.6019h-30.8888v17.2617s34.5233 7.268 82.6742-4.5426v6.36l12.7191 4.5425v5.4511l-5.1941 2.7969a40.2583 40.2583 0 0 0-10.3282 7.9529c-6.5875 7.0458-22.5469 21.3466-52.6154 33.7663v15.4446h10.902l7.2681 2.7255v6.36h59.053l6.8138 6.8138v5.9053h49.5137l7.2681 4.5425h55.419l7.268 6.36h42.7l30.0081 57.0962 480.0016 34.6623v12.7191h-795.2816v-45.74a31.054 31.054 0 0 0-15.6268-27.0554c-7.2972-4.1345-16.5792-6.5048-26.5861-1.9562a30.8216 30.8216 0 0 0-17.7486 28.166v46.5859H999.068v-45.022c0-21.065-16.5195-38.7633-37.5735-39.4452q-.738-.0238-1.4923-.024" />
+      </svg>
+   </section>
+
+   <section id="section-gallery">
+      <div class="gallery-grid">
+         <div class="photo-box">
+            <img class="photos" src="./img/stock-1.jpg" alt="Stock 1">
+         </div>
+         <div class="photo-box">
+            <img class="photos" src="./img/stock-2.jpg" alt="Stock 2">
+         </div>
+         <div class="photo-box">
+            <img class="photos" src="./img/stock-3.jpg" alt="Stock 3">
+         </div>
+         <div class="photo-box">
+            <img class="photos" src="./img/stock-4.jpg" alt="Stock 4">
+         </div>
+         <div class="photo-box">
+            <img class="photos" src="./img/stock-5.jpg" alt="Stock 5">
+         </div>
+         <div class="photo-box">
+            <img class="photos" src="./img/stock-6.jpg" alt="Stock 6">
+         </div>
+         <div class="photo-box">
+            <img class="photos" src="./img/stock-7.jpg" alt="Stock 7">
+         </div>
+         <div class="photo-box">
+            <img class="photos" src="./img/stock-8.jpg" alt="Stock 8">
+         </div>
+      </div>
+   </section>
+
+   <section id="section-people">
+      <div class="train-block">
+         <img class="bullet-train" src="./img/bullet-train.png" alt="Bullet Train">
+      </div>
+      <div class="people-title-box">
+         <div class="people-line"></div>
+         <h1 class="people-title">Our Team</h1>
+         <div class="people-line"></div>
+      </div>
+      <div class="group group-1">
+         <div class="person-box">
+            <div class="person">
+               <img class="profile-img" src="./img/profile-1.jpg" alt="Profile">
+            </div>
+            <span class="name">Name Here</span>
+            <span class="position">Position Here</span>
+         </div>
+         <div class="person-box">
+            <div class="person">
+               <img class="profile-img" src="./img/profile-2.jpg" alt="Profile">
+            </div>
+            <span class="name">Name Here</span>
+            <span class="position">Position Here</span>
+         </div>
+         <div class="person-box">
+            <div class="person">
+               <img class="profile-img" src="./img/profile-3.jpg" alt="Profile">
+            </div>
+            <span class="name">Name Here</span>
+            <span class="position">Position Here</span>
+         </div>
+      </div>
+      <div class="group group-2">
+         <div class="person-box">
+            <div class="person">
+               <img class="profile-img" src="./img/profile-4.jpg" alt="Profile">
+            </div>
+            <span class="name">Name Here</span>
+            <span class="position">Position Here</span>
+         </div>
+         <div class="person-box">
+            <div class="person">
+               <img class="profile-img" src="./img/profile-5.jpg" alt="Profile">
+            </div>
+            <span class="name">Name Here</span>
+            <span class="position">Position Here</span>
+         </div>
+         <div class="person-box">
+            <div class="person">
+               <img class="profile-img" src="./img/profile-6.jpg" alt="Profile">
+            </div>
+            <span class="name">Name Here</span>
+            <span class="position">Position Here</span>
+         </div>
+      </div>
+      <div class="group group-3">
+         <div class="person-box">
+            <div class="person">
+               <img class="profile-img" src="./img/profile-7.jpg" alt="Profile">
+            </div>
+            <span class="name">Name Here</span>
+            <span class="position">Position Here</span>
+         </div>
+         <div class="person-box">
+            <div class="person">
+               <img class="profile-img" src="./img/profile-8.jpg" alt="Profile">
+            </div>
+            <span class="name">Name Here</span>
+            <span class="position">Position Here</span>
+         </div>
+         <div class="person-box">
+            <div class="person">
+               <img class="profile-img" src="./img/profile-9.jpg" alt="Profile">
+            </div>
+            <span class="name">Name Here</span>
+            <span class="position">Position Here</span>
+         </div>
+      </div>
+   </section>
+   
+   <section id="section-contact">
+      <div class="contact-title">
+         <div class="contact-title__line"></div>
+         <h1 class="contact-title__title">Contact Us</h1>
+         <div class="contact-title__line"></div>
+      </div>
+      <div class="contact-flex">
+         <div class="email-box">
+            <div class="contact-content">
+               <h1 class="contact-content__header">
+                  SUBSCRIBE
+               </h1>
+               <span class="contact-content__span">
+                  to our email newsletter for event updates
+               </span>
+               <form class="contact-email" action="">
+                  <input class="contact-email__text" type="text" name="email" placeholder="email address...">
+                  <input class="contact-email__btn" type="submit" value="SUBMIT">
+               </form>
+            </div>
+         </div>
+         <img class="anim-fish" src="./img/fish-anim.gif" alt="Fish Animation">
+         <div class="facebook-box">
+            <div class="contact-content">
+               <h1 class="contact-content__header">
+                  QUESTION?
+               </h1>
+               <span class="contact-content__span">
+                  join and message us through our Facebook group
+               </span>
+               </br>
+               <button class="facebook-btn">
+                  <ion-icon class="facebook-btn__icon" name="logo-facebook"></ion-icon>
+               </button>
+            </div>
+         </div>
+      </div>
+   </section>
+</body>
+
+<script>
+   
+   // ABOUT //
+
+   function closeNav() {
+   document.getElementById("navi-toggle").checked = false;
+   }
+
+   // ABOUT //
+
+   TweenMax.fromTo('.background__img', 13, { x: 0 }, { x: '-300px', repeat: -1, repeatDelay: .2, yoyo: true })
+   TweenMax.to('.logo__fish', 7, { rotation: -360, ease: Power2.easeOut })
+
+   // EVENT //
+
+   const hellos = new TimelineMax({ repeat: -1, repeatDelay: 1 })
+   hellos.to('.hello__english', 1, { opacity: 1 })
+   hellos.to('.hello__english', 1, { opacity: 0 })
+   hellos.to('.hello__korean', 1, { opacity: 1 })
+   hellos.to('.hello__korean', 1, { opacity: 0 })
+   hellos.to('.hello__japanese', 1, { opacity: 1 })
+   hellos.to('.hello__japanese', 1, { opacity: 0 })
+   hellos.to('.hello__chinese', 1, { opacity: 1 })
+   hellos.to('.hello__chinese', 1, { opacity: 0 })
+   hellos.to('.hello__hindi', 1, { opacity: 1 })
+   hellos.to('.hello__hindi', 1, { opacity: 0 })
+   hellos.to('.hello__vietnamese', 1, { opacity: 1 })
+   hellos.to('.hello__vietnamese', 1, { opacity: 0 })
+
+   // ABOUT //
+
+   const animAbout = new TimelineMax()
+   animAbout.fromTo('.about-title__title', .5, {y: '-5px', opacity: 0}, {y: 0, opacity: 1})
+   animAbout.fromTo('.about-title__line', .5, {width: '0%'}, {width: '20%'}, '-=.5')
+   animAbout.fromTo('.about-text__icon-1', .5, { x: '-100px', opacity: 0 }, { x: 0, opacity: 1 })
+   animAbout.fromTo('.about-text__span-1', .5, { x: '100px', opacity: 0 }, { x: 0, opacity: 1 }, '-=.5')
+   animAbout.fromTo('.about-text__icon-2', .5, { x: '-200px', opacity: 0 }, { x: 0, opacity: 1 }, '-=.3')
+   animAbout.fromTo('.about-text__span-2', .5, { x: '120px', opacity: 0 }, { x: 0, opacity: 1 }, '-=.5')
+   animAbout.fromTo('.about-text__icon-3', .5, { x: '-300px', opacity: 0 }, { x: 0, opacity: 1 }, '-=.3')
+   animAbout.fromTo('.about-text__span-3', .5, { x: '130px', opacity: 0 }, { x: 0, opacity: 1 }, '-=.5')
+
+   // GALLERY //
+
+   const animGallery = new TimelineMax()
+   animGallery.fromTo('#section-gallery', .3, { filter: 'brightness(.25)' }, { filter: 'brightness(1)' })
+
+   // PEOPLE //
+
+   const animTrain = new TimelineMax()
+   animTrain.to('.bullet-train', 1, { x: '4000rem', ease: Power0.easeNone })
+
+   const animPeople = new TimelineMax()
+   animPeople.fromTo('.people-title', .5, { y: '-5px', opacity: 0 }, { y: 0, opacity: 1 })
+   animPeople.fromTo('.people-line', .5, { width: '0%' }, { width: '20%' }, '-=.5')
+   animPeople.fromTo('.group', .5, { y: '-10px', opacity: 0 }, { y: 0, opacity: 1 })
+
+   ////////////////////////////////////////////////////////////
+   // SCROLLMAGIC //
+   ////////////////////////////////////////////////////////////
+
+   const controller = new ScrollMagic.Controller()
+
+   // about
+
+   const sceneAbout = new ScrollMagic.Scene({
+      triggerElement: '#section-about',
+   })
+   .setTween(animAbout)
+   .addTo(controller)
+
+   // gallery
+
+   const sceneGallery = new ScrollMagic.Scene({
+      triggerElement: '#section-gallery',
+   })
+      .setTween(animGallery)
+      .addTo(controller)
+
+   // people
+
+   const scenePeople = new ScrollMagic.Scene({
+      triggerElement: '#section-people',
+   })
+      .setTween(animPeople)
+      .addTo(controller)
+
+   const sceneTrain = new ScrollMagic.Scene({
+      triggerElement: '#section-people',
+      triggerHook: 'onEnter',
+      duration: 1000
+   })
+      .setTween(animTrain)
+      .addTo(controller)
+      
+</script>
+
+</html>

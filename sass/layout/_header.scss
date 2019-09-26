@@ -1,0 +1,62 @@
+.background {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+
+   &__img {
+      height: 200%;
+      filter: grayscale(.1)
+   }
+}
+
+.logo {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &__circle {
+      height: 27rem;
+      width: 27rem;
+      border-radius: 27rem;
+      box-shadow: .8rem .8rem 1.5rem rgba(0, 0, 0, 0.226);
+   }
+   &__fish,
+   &__water {
+      position: absolute;
+      height: 35rem;
+   }
+}
+
+// MEDIA QUERIES //
+
+@media screen and (max-width: 700px) {
+   .logo {
+      &__circle {
+         height: 22rem;
+         width: 22rem;
+         border-radius: 22rem;
+      }
+      &__fish,
+      &__water {
+         height: 30rem;
+      }
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .logo {
+      &__circle {
+         height: 14rem;
+         width: 14rem;
+         border-radius: 14rem;
+      }
+      &__fish,
+      &__water {
+         height: 22rem;
+      }
+   }
+}

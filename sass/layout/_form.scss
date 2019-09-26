@@ -1,0 +1,163 @@
+#section-contact {
+   padding-top: 10rem;
+   position: relative;
+   width: 100%;
+   height: 70rem;
+}
+
+.contact-title {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &__line {
+      margin: 0 3rem;
+      height: .3rem;
+      width: 20%;
+      background-color: #333;
+   }
+
+   &__title {
+      position: relative;
+      font-size: 5rem;
+      font-weight: 100;
+   }
+}
+
+.contact-flex {
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 10rem;
+}
+
+.email-box,
+.facebook-box {
+   height: 40rem;
+   width: 35rem;
+   border-radius: 5rem;
+   box-shadow: 6px 6px 10px #aaa;
+   background: linear-gradient(46deg, rgba(18, 18, 18, 0.01) 0%, rgba(18, 18, 18, 0.01) 50%, rgba(10, 10, 10, 0.01) 50%, rgba(10, 10, 10, 0.01) 100%),
+   linear-gradient(338deg, rgba(232, 232, 232, 0.03) 0%, rgba(232, 232, 232, 0.03) 50%, rgba(174, 174, 174, 0.03) 50%, rgba(174, 174, 174, 0.03) 100%),
+   linear-gradient(26deg, rgba(180, 180, 180, 0.02) 0%, rgba(180, 180, 180, 0.02) 50%, rgba(191, 191, 191, 0.02) 50%, rgba(191, 191, 191, 0.02) 100%),
+   linear-gradient(129deg, rgba(52, 52, 52, 0.03) 0%, rgba(52, 52, 52, 0.03) 50%, rgba(188, 188, 188, 0.03) 50%, rgba(188, 188, 188, 0.03) 100%),
+   linear-gradient(86deg, rgba(234, 234, 234, 0.03) 0%, rgba(234, 234, 234, 0.03) 50%, rgba(100, 100, 100, 0.03) 50%, rgba(100, 100, 100, 0.03) 100%),
+   linear-gradient(73deg, rgba(203, 203, 203, 0.02) 0%, rgba(203, 203, 203, 0.02) 50%, rgba(24, 24, 24, 0.02) 50%, rgba(24, 24, 24, 0.02) 100%),
+   linear-gradient(90deg, rgb(237, 46, 8), rgb(209, 122, 57));
+}
+
+.contact-content {
+   height: 100%;
+   padding: 6rem 6rem;
+   color: #fff;
+
+   &__header {
+      font-size: 3.5rem;
+      font-weight: 700;
+   }
+
+   &__span {
+      font-size: 2rem;
+   }
+}
+
+.contact-email {
+   margin-top: 8rem;
+   display: flex;
+   flex-direction: column;
+
+   &__text {
+      font-size: 2rem;
+      color: #fff;
+      opacity: 1;
+      border: none;
+      border-bottom: 2px solid #ff8827;
+      outline: none;
+      background-color: transparent;
+
+      &::placeholder {
+         color: #ccc;
+         opacity: 1;
+      }
+   }
+
+   &__btn {
+      background-color: rgb(63, 161, 241);
+      border: none;
+      border-radius: 4rem;
+      color: white;
+      padding: 1.5rem 3.2rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 2rem;
+      margin: 3rem 0rem;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      outline: none;
+      cursor: pointer;
+
+      &:active {
+         transform: translateY(.2rem);
+         background-color: rgb(53, 146, 221);
+      }
+   }
+}
+
+.facebook-btn {
+   position: relative;
+   margin-top: 6rem;
+   height: 10rem;
+   width: 10rem;
+   left: 50%;
+   outline: none;
+   background-color: transparent;
+   border: none;
+   transform: translateX(-50%);
+
+   &__icon {
+      position: relative;
+      height: 10rem;
+      width: 10rem;
+      left: 50%;
+      color: rgb(63, 161, 241);
+      transform: translate(-50%);
+      cursor: pointer;
+
+      &:active {
+         color: #3b5998;
+      }
+   }
+}
+
+.anim-fish {
+   height: 20rem;
+   opacity: .5;
+}
+
+@media screen and (max-width: 600px) {
+   .contact-title {
+      &__title {
+         font-size: 3rem;
+      }
+
+      &__line {
+         margin: 0 1rem;
+         height: .2rem;
+         width: 10%;
+      }
+   }
+}
+
+@media screen and (max-width: 1180px) {
+   #section-contact {
+      height: 135rem;
+   }
+
+   .contact-flex {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5rem;
+      height: 100rem;
+   }
+}

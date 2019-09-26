@@ -1,0 +1,114 @@
+#section-people {
+   height: 100rem;
+   width: 100%;
+   overflow: hidden;
+   background: linear-gradient(135deg, rgb(243, 119, 17) 0%, rgb(243, 119, 17) 77%, rgb(255, 150, 63) 77%, rgb(250, 157, 81) 86%, rgb(230, 135, 117) 86%, rgb(230, 135, 117) 91%, rgb(241, 199, 80) 91%, rgb(241, 199, 80) 100%);
+   clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
+}
+
+.train-block {
+   position: relative;
+   height: 10rem;
+   background-color: #fff;
+}
+
+.bullet-train {
+   position: absolute;
+   bottom: -1px;
+   left: -200rem;
+}
+
+.people-title-box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 9rem;
+   margin-bottom: 6rem;
+}
+
+.people-line {
+   margin: 0 3rem;
+   height: .3rem;
+   width: 20%;
+   background-color: #333;
+}
+
+.people-title {
+   position: relative;
+   font-size: 5rem;
+   font-weight: 100;
+}
+
+.group {
+   display: flex;
+   justify-content: center;
+}
+
+.person-box {
+   margin: 0 4rem;
+   margin-bottom: 3rem;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   font-size: 1.5rem;
+}
+
+.person {
+   display: flex;
+   height: 10rem;
+   width: 10rem;
+   margin-bottom: 2rem;
+   border-radius: 9rem;
+   background-color: red;
+   overflow: hidden;
+   justify-content: center;
+   align-items: center;
+}
+
+.profile-img {
+   height: 10rem;
+   transition: height .3s;
+
+   &:hover {
+      height: 12rem;
+   }
+}
+
+.name {
+   font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+   .people-title {
+      font-size: 3rem;
+   }
+
+   .people-line {
+      margin: 0 1rem;
+      height: .2rem;
+      width: 10%;
+   }
+
+   .person-box {
+      margin: 0 2rem;
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+   }
+
+   .person {
+      display: flex;
+      height: 7rem;
+      width: 7rem;
+      margin-bottom: 2rem;
+      border-radius: 9rem;
+      background-color: red;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .profile-img {
+      height: 7rem;
+   }
+}

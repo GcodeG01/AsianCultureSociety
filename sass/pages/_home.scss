@@ -1,0 +1,20 @@
+#header {
+   height: 60vh;
+   width: 100%;
+   position: relative;
+}
+@media screen and (max-width: 400px) {
+   #header {
+      height: 50vh;
+   }
+}
+
+#section-event {
+   height: 40vh;
+   width: 100%;
+}
+@media screen and (max-width: 400px) {
+   #section-event {
+      height: 50vh;
+   }
+}
